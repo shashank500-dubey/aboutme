@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5% ;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.7;
+}
+li{
+    list-style: none;
+}
+
+
+
+.nav-item{
+    position:relative;
+    top:0px;
+   
+    
+}
+
+
+
+
+.header{
+    position:relative;
+    height:95vh;
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('lapyops.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   
+}
+.navbar{
+    
+    padding: 1rem;
+    position:static;
+    
+
+}
+.btn:hover{
+    background: #ddd;
+}
+
+.header .navbar .logo{
+    float:left;
+}
+.header .navbar .nav-items{
+    float:right;
+    margin-top: 1rem;
+    
+   
+}
+.clear-fix{
+    clear:both;
+}
+.header .navbar .nav-items a{
+   
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+.header .navbar .nav-items .nav-item{
+    display:inline-block;
+   
+    
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    
+   
+}
+
+.container{
+    
+ max-width: 1200px;
+    width:90%;
+    margin:0 auto;
+
+
+
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 3.5rem;
+}
+.sm-heading{
+    font-size:2rem;
+}
+.text-red{
+    color:#e63946;
+
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color:#333333;
+}
+.text-grey{
+    color:#555555;
+}
+
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+.header-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header-content h1{
+    font-weight: 700;
+}
+.header-content .btn{
+    display:inline-block;
+    padding:0.02em 0.6em;
+    font-weight: 100;
+    margin:0.5em 0;
+}
+.btn-primary{
+    
+    background-color: #f4f4f4;
+    border-radius: 10em;
+    
+    
+}
+/* #################################section#######################################*/
+.showcase{
+    background:#ddd;
+    padding:10rem 0;
+}
+.row{
+    height:350px;
+    
+    background: #f4f4f4;
+    box-shadow: 5px 5px 20px 0px #aaa;
+}
+.row1{
+    margin-bottom: 10rem;
+
+}
+.row2{
+    margin-bottom: 10rem;
+
+}
+.row3{
+    margin-bottom: 10rem;
+
+}
+.row1 .img-box,.row2 .text-box{
+    float:left;
+    width: 50%;
+}
+.row3 .img-box,.row3 .text-box{
+    float:left;
+    width: 50%;
+}
+
+
+
+
+.row1 .text-box,.row2 .img-box{
+    float:right;
+    width: 50%;
+}
+
+.row4 .text-box,.row4 .img-box{
+    float:right;
+    width: 50%;
+}
+
+.row .img-box{
+    
+    height:100%;
+}
+.row .text-box{
+    
+    padding:3rem;
+    
+}
+.row .img-box img{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.box{
+    width:33.3333%;
+    float: left;
+    padding:2rem;
+    text-align: center;
+
+}
+
+.box-1,.box-3{
+    background-color: #263238;
+    color:white;
+}
+.box-2{
+    background: rgb(236, 61, 90);
+}
+.box-wrapper::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.box-wrapper{
+    border:0.1px solid white;
+    box-shadow: 5px 5px 20px 0.234 black ;
+}
+.footer{
+    background: #263238;
+    color:#f4f4f4;
+    padding:2rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin:2rem;
+}
+
+
+
+
+
+
+.boxing{
+      
+    max-width: 500px;
+    margin:auto;
+    position:relative;
+    
+}
+
+.button{
+    display:inline-block;
+    text-decoration: None;
+    background-color: black;
+    color:white;
+    padding: 0.5em 1.2em;
+    margin-top: 0.8rem;
+}
+
+.boxing-content{
+   
+    position:absolute;
+    top:50%;
+    left: 20%;
+    transform:translate(-50%,-50%);
+    color:rgb(98, 241, 206);
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    transition:all 0.6s ease-in-out;
+}
+
+.boxing:hover .boxing-content{
+    opacity: 1;
+    
+    left: 50%;
+    top:50%;
+
+}
+.boxing::after{
+    content:'';
+    
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.623);
+    opacity: 0;
+    z-index:1;
+    transition: opacity 0.2s ease-in;
+    
+}
